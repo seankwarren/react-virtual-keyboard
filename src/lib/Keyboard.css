@@ -1,0 +1,279 @@
+.vk-keyboard-container {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+}
+.vk-keyboard {
+    user-select: none;
+    overflow: hidden;
+    display: block;
+}
+
+.vk-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.vk-theme-default .vk-row:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.vk-theme-default .vk-row .vk-button:not(:last-child) {
+    margin-right: 5px;
+}
+
+.vk-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vk-button span {
+    pointer-events: none;
+}
+
+/* ----- START DEFAULT THEME ----- */
+.vk-keyboard-container.vk-theme-default {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    background-color: #e0e0e0;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 5px;
+    width: calc(100% - 2 * 5px);
+}
+
+.vk-theme-default .vk-row:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.vk-theme-default .vk-row .vk-button:not(:last-child) {
+    margin-right: 5px;
+}
+
+.vk-theme-default .vk-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    flex: 1;
+    height: 60px;
+    box-shadow: 0px 0px 3px -1px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid #b5b5b5;
+}
+
+.vk-theme-default .vk-button:hover {
+    background: #efefef;
+}
+
+.vk-theme-default .vk-button.vk-button--active {
+    background: #e1e1e1;
+}
+
+.vk-theme-default .vk-button-capslock {
+    flex: 1.75;
+}
+
+.vk-theme-default .vk-button-space {
+    flex: 13.75;
+}
+
+.vk-theme-default .vk-button-backspace {
+    flex: 2;
+}
+
+.vk-theme-default .vk-button-tab {
+    flex: 1.5;
+}
+
+.vk-theme-default .vk-button-shift {
+    flex: 2.25;
+}
+
+.vk-theme-default .vk-button-shift-right {
+    flex: 2.75;
+}
+
+.vk-theme-default .vk-button-\\,
+.vk-theme-default .vk-button-\| {
+    flex: 1.5;
+}
+
+.vk-theme-default .vk-button-enter {
+    flex: 2.25;
+}
+
+/* ----- END DEFAULT THEME ----- */
+
+/* ----- START DARK THEME ----- */
+.vk-keyboard-container.vk-theme-dark {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    background: #0a0a0a;
+    font-weight: 300;
+    color: white;
+    padding: 5px;
+    width: calc(100% - 2 * 5px);
+}
+
+.vk-theme-dark .vk-row:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.vk-theme-dark .vk-row .vk-button:not(:last-child) {
+    margin-right: 5px;
+}
+
+.vk-theme-dark .vk-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #545454;
+    text-align: center;
+    flex: 1;
+    height: 60px;
+    box-shadow: 0px 0px 3px -1px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid #333333;
+}
+
+.vk-theme-dark .vk-button:hover {
+    background: #646464;
+}
+
+.vk-theme-dark .vk-button.vk-button--active {
+    background: #707070;
+}
+
+.vk-theme-dark .vk-button-capslock {
+    flex: 1.75;
+}
+
+.vk-theme-dark .vk-button-space {
+    flex: 13.75;
+}
+
+.vk-theme-dark .vk-button-backspace {
+    flex: 2;
+}
+
+.vk-theme-dark .vk-button-tab {
+    flex: 1.5;
+}
+
+.vk-theme-dark .vk-button-shift {
+    flex: 2.25;
+}
+
+.vk-theme-dark .vk-button-shift-right {
+    flex: 2.75;
+}
+
+.vk-theme-dark .vk-button-\\,
+.vk-theme-dark .vk-button-\| {
+    flex: 1.5;
+}
+
+.vk-theme-dark .vk-button-enter {
+    flex: 2.25;
+}
+
+/* ----- END DARK THEME ----- */
+
+/* ----- START IOS THEME ----- */
+.vk-keyboard-container.vk-theme-ios {
+    display: flex;
+    font-family: -apple-system;
+    justify-content: center;
+    font-size: 24px;
+    background: #2b2b2b;
+    font-weight: 200;
+    color: white;
+    padding: 5px;
+    width: calc(100% - 2 * 5px);
+}
+
+.vk-theme-ios .vk-keyboard {
+    width: 400px;
+}
+
+.vk-theme-ios .vk-row:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+.vk-theme-ios .vk-row .vk-button-standardBtn:not(:last-child) {
+    margin-right: 6px;
+}
+
+.vk-theme-ios .vk-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    box-sizing: border-box;
+    max-width: 35px;
+    border-radius: 5px;
+    background: #6b6b6b;
+    text-align: center;
+    flex: 1;
+    height: 50px;
+    box-shadow: 0px 0px 3px -1px #1a1a1a;
+}
+
+.vk-theme-ios .vk-button:hover {
+    background: #646464;
+}
+
+.vk-theme-ios .vk-button.vk-button--active {
+    background: #707070;
+}
+
+.vk-theme-ios .vk-button-space {
+    max-width: 190px;
+}
+
+.vk-theme-ios .vk-keyboard .vk-row:nth-child(3) .vk-button:nth-last-child(2) {
+    margin-right: auto;
+}
+
+.vk-theme-ios .vk-button-backspace,
+.vk-theme-ios .vk-button-alt2 {
+    max-width: 50px;
+}
+
+.vk-theme-ios .vk-button-shift {
+    max-width: 50px;
+    margin-right: auto;
+}
+
+.vk-theme-ios .vk-button-return,
+.vk-theme-ios .vk-button-alt,
+.vk-theme-ios .vk-button-default {
+    max-width: 100px;
+}
+
+.vk-theme-ios .vk-button-return {
+    margin-left: auto;
+}
+
+.vk-theme-ios .vk-button-alt,
+.vk-theme-ios .vk-button-alt2,
+.vk-theme-ios .vk-button-default {
+    margin-right: auto;
+}
+
+.vk-theme-ios .vk-button-alt,
+.vk-theme-ios .vk-button-alt2,
+.vk-theme-ios .vk-button-default {
+    font-size: 14px;
+}
+
+/* ----- END IOS THEME ----- */
